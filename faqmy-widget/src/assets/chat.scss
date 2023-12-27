@@ -1,0 +1,89 @@
+.faqmy-chat {
+  width: 350px;
+  height: 480px;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  &__header {
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    display: flex;
+    border-bottom: 1px solid #f6f8fa;
+  }
+  &__messages {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 16px;
+  }
+  &__send {
+    border-top: 1px solid #f6f8fa;
+    position: relative;
+
+  }
+}
+.faqmy-input {
+  padding: 16px 60px 16px 20px;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+.faqmy-message {
+  padding: 10px 16px;
+  align-self: end;
+  border-radius: 6px;
+  max-width: 90%;
+  margin: 4px;
+  overflow-anchor: none;
+  line-height: 1.5;
+  font-size: 14px;
+  &_bot {
+    align-self: start;
+    background-color: #f6f8fa;
+  }
+  &_typing {
+    svg {
+      height: 16px;
+      display: block;
+    }
+  }
+}
+.faqmy-chat-close {
+  margin-left: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  svg {
+    width: 16px;
+  }
+}
+.faqmy-chat-btn-send {
+  cursor: pointer;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    opacity: 0.7;
+  }
+  svg {
+    display: block;
+    width: 22px;
+    //height: 20px;
+  }
+}

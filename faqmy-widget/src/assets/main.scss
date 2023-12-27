@@ -1,0 +1,21 @@
+.faqmy-widget {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 40px);
+  &__chat {
+    margin-bottom: 20px;
+  }
+  &__action {
+
+  }
+  * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+}
